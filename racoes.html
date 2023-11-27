@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-
+    alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+    aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+    crossorigin="anonymous">
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .img1
+        {
+            width: 120px;
+            height: 100px;
+        }
+
+        body
+        {
+            
+            margin: 1px;
+            background-color: rgb(227, 226, 224);
+        }
+
+        header
+        {
+            width: 100%;
+            height: 40%;
+            background-color: white;
+            border: 1px solid black;
+        }
+        
+        footer 
+        {
+            flex: 1 1 100vw;
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            position: absolute;
+            top: 100%;
+            border: 1px solid black;
+        }
+
+        .menu
+        {
+            width: 100%;
+            height: 40%;
+            background-color: rgb(229, 208, 189);
+            border: 1px solid black;
+            letter-spacing: 5px;
+            word-spacing: 50px;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        .input_name
+        {
+            width: 400px;
+            height: 50px;
+            position: absolute;
+            left: 35%;
+            top: 5%;
+            border-radius: 12px;
+            text-align:center;
+            font-size: 18px;
+        }
+
+        .bibi-search
+        {
+            position: absolute;
+            left: 38%;
+            top: 7%;
+        }
+
+        .bibi-bag
+        {
+            position: absolute;
+            left: 80%;
+            top: 6%;
+        }
+
+        .bibi-heart
+        {
+            position: absolute;
+            left: 85%;
+            top: 6.5%;
+        }
+
+        .bibi-person-circle
+        {
+            position: absolute;
+            left: 90%;
+            top: 6.5%; 
+            color: blue;
+        }
+
+
+        h5
+        {
+            position: absolute;
+            left: 92.5%;
+            top: 6.5%; 
+            color: blue;
+        }
+
+        .img2
+        {
+            width: 480px;
+            height: 220px;
+            position: absolute;
+            top:30%;
+            left: 0%;
+        }
+
+        .img3
+        {
+            width: 530px;
+            height: 220px;
+            position: absolute;
+            top:30%;
+            left: 31%;
+        }
+
+        .img4
+        {
+            width: 530px;
+            height: 220px;
+            position: absolute;
+            top:30%;
+            left: 65%;
+        }
+
+        .racoessecas
+        {
+            position: absolute;
+            top: 25%;
+            left: 1%;
+        }
+
+        .racoesumidas
+        {
+            position: absolute;
+            top: 65%;
+            left: 1%;
+        }
+
+        .img5
+        {
+            width: 480px;
+            height: 200px;
+            position: absolute;
+            top:70%;
+            left: 0%;
+        }
+
+        .img6
+        {
+            width: 420px;
+            height: 200px;
+            position: absolute;
+            top:70%;
+            left: 30%;
+        }
+
+        .img7
+        {
+            width: 420px;
+            height: 200px;
+            position: absolute;
+            top:70%;
+            left: 57%;
+        }
+
+        .img8
+        {
+            width: 250px;
+            height: 200px;
+            position: absolute;
+            top:70%;
+            left: 84%;
+        }
+
+        .img9
+        {
+            width: 1510px;
+            height: 300px;
+        }
+
+    </style>
+    <title>Rações</title>
+</head>
+<body>
+    <header>
+        <img src = "logo.png" class="img1">
+        <input type="text" name="Nome" placeholder="O que seu Pet busca?" class="input_name">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bibi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bibi-bag" viewBox="0 0 16 16">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" fill="currentColor" class="bibi-heart" viewBox="0 0 16 16">
+            <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bibi-person-circle" viewBox="0 0 16 16">
+            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+        </svg>
+        <h5>Entre<br>Cadastre-se</h5>
+    </header>
+    <nav class="menu">
+        Gato  Cachorro  Pássaro  Outros Pets  Casa&Jardim  Promoções  Clube PetMundo
+    </nav>
+    <main>
+        <h2 class="racoessecas">Rações Secas</h2>
+        <img src = "imgm1.png" class="img2">
+        <img src = "imgm2.png" class="img3">
+        <img src = "imgm2.png" class="img4">
+        <h2 class="racoesumidas">Rações Úmidas</h2>
+        <img src = "imgm4.png" class="img5">
+        <img src = "imgm5.png" class="img6">
+        <img src = "imgm4.png" class="img7">
+        <img src = "imgm5.png" class="img8">
+    </main>
+     <footer>
+        <img src = "imgm8.png" class="img9">
+    </footer>
+</body>
+</html>

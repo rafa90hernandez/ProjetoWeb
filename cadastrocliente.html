@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-
+    alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-
+    aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+    crossorigin="anonymous">
+    <style>
+
+        form
+        {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        div
+        {
+            background-color: rgb(255, 254, 253);
+        }
+        .input_name
+        {
+            width: 250px;
+        }
+        .input_email
+        {
+            width: 250px;
+        }
+        .input_celular
+        {
+            width: 250px;
+        }
+        .input_telefone
+        {
+            width: 250px;
+        }
+        .input_sexo
+        {
+            width: 258px;
+        }
+        .input_cpf
+        {
+            width: 250px;
+        }
+        .input_data
+        {
+            width: 253px;
+        }
+        .input_senha
+        {
+            width: 250px;
+        }
+        .input_confsenha
+        {
+            width: 250px;
+        }
+        .botao_cadastrar
+        {
+            width: 250px;
+            height: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(67, 67, 201);
+            border-radius: 12px;
+        }
+        .legenda
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .fieldset_config
+        {
+            width: 260px;
+        }
+        .tituloConfig
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bolder;
+            
+        }
+        .textoConfig
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight:normal;
+        }
+        .configMensag
+        {
+            display:inline-block;
+        }
+        .configMens
+        {
+            background-color: rgb(255, 255, 255);
+            width: 260px; 
+            display:inline-block;
+            background-color: rgb(227, 226, 224);
+        }
+        body
+        {
+            
+            margin: 1px;
+            background-color: rgb(227, 226, 224);
+        }
+        .img1
+        {
+            width: 120px;
+            height: 100px;
+        }
+
+        .img2
+        {
+            width: 180px;
+            position: absolute;
+            left: 85%;
+            top: 2%;
+            
+            
+        }
+
+        header
+        {
+            width: 100%;
+            height: 40%;
+            background-color: white;
+            border: 1px solid black;
+        }
+        
+        footer 
+        {
+            flex: 1 1 100vw;
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            border: 1px solid black;
+        }
+
+        .img3
+        {
+            width: 1510px;
+            height: 300px;
+        }
+
+        
+    </style>
+
+    <title>PetLove - Cadastro de Cliente</title>
+</head>
+<body>
+    <header>
+        <img src = "logo.png" class="img1">
+        <img src = "ambienteseguro.png" class="img2">
+    </header>
+    <div class="configMensag">
+        <form action="https://formsubmit.co/rafaelhernandez2006@hotmail.com" method="POST">
+            <fieldset class="fieldset_config">
+                <legend class="legenda">Crie sua conta</legend>
+                <input type="radio" name="Pessoa Física" value="Pessoa Física">
+                <label>Pessoa Física</label>
+                <input type="radio" name="Pessoa Jurídica" value="Pessoa Jurídica">
+                <label>Pessoa Jurídica</label>
+                <br><br>
+                <label>Nome e sobrenome</label>
+                <br>
+                <input type="text" name="Nome" placeholder="Digite seu nome e sobrenome" class="input_name" required>
+                <br><br>
+                <label>E-mail</label>
+                <br>
+                <input type="email" name="E-mail" placeholder="Digite seu e-mail" class="input_email" required>
+                <br><br>
+                <label>Celular</label>
+                <br>
+                <input type="text" name="Celular" placeholder="DDD + Celular" pattern="[0-9]{11}" class="input_celular">
+                <br><br>
+                <label>Telefone (Opcional)</label>
+                <br>
+                <input type="text" name="Telefone" placeholder="DDD + Telefone" pattern="[0-9]{10}" class="input_telefone">
+                <p>Sexo (Opcional)
+                    <br>
+                <select name="Sexo" class="input_sexo">
+                    <option value = "masculino">Masculino</option>
+                    <option value = "feminino">Feminino</option>
+                </select>
+                </p>
+                <label>Data de Nascimento</label>
+                <br>
+                <input type="date" name="Data" class="input_data">
+                <br><br>
+                <label>CPF</label>
+                <br>
+                <input type="text" name="CPF" placeholder="Digite o seu CPF" class="input_cpf" required>
+                <br><br>
+                <label>Senha</label>
+                <br>
+                <input type="password" name="Senha" placeholder="Digite a sua senha" minlength="8" maxlength="8" class="input_senha" required>
+                <br><br>
+                <label>Confirme a senha</label>
+                <br>
+                <input type="password" name="ConfSenha" placeholder="Confirme a sua senha" minlength="8" maxlength="8" class="input_confsenha" required>
+                <p>Pedido de senha:
+                <br><br>
+                *Mínimo 8 caracteres   
+                *Letra maiúscula
+                <br><br>
+                *Letra minúscula                  
+                *Números
+                </p>
+                <input type="checkbox" name="Termos" required>
+                <label>Concordo com os Termos e Condições</label>
+                <br><br>
+                <button type="submit" class="botao_cadastrar">Cadastrar</button>
+            </fieldset>
+    </div>
+    <div class="configMens">
+        <p class="tituloConfig">Crie sua conta rápido e fácil</p>
+        <p class="textoConfig">Cadastre-se e se beneficie com as
+        <br>
+            ofertas, promoções e novidades.
+            <br>
+            Cuide do seu Pet com o amor que 
+            <br>
+            ele merece.
+        </p>
+    </div>
+    <footer>
+        <img src = "imgm8.png" class="img3">
+    </footer>
+</body>
+</html>

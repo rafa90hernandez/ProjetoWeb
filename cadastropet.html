@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        form
+        {
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+        }
+
+        div
+        {
+            background-color: rgb(255, 254, 253);
+        }
+        .input_name
+        {
+            width: 250px;
+        }
+        .input_email
+        {
+            width: 250px;
+        }
+        .input_celular
+        {
+            width: 250px;
+        }
+        .input_telefone
+        {
+            width: 250px;
+        }
+        .tipo
+        {
+            width: 258px;
+        }
+        .input_cpf
+        {
+            width: 250px;
+        }
+        .input_data
+        {
+            width: 253px;
+        }
+        .input_senha
+        {
+            width: 250px;
+        }
+        .input_confsenha
+        {
+            width: 250px;
+        }
+        .botao_cadastrar
+        {
+            width: 250px;
+            height: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: rgb(67, 67, 201);
+            border-radius: 12px;
+        }
+        .legenda
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .fieldset_config
+        {
+            width: 260px;
+        }
+        .tituloConfig
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bolder;
+            
+        }
+        .textoConfig
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight:normal;
+        }
+        .configMensag
+        {
+            display:inline-block;
+        }
+        .configMens
+        {
+            background-color: rgb(227, 226, 224);
+            width: 260px; 
+            display:inline-block;
+        }
+
+        .img1
+        {
+            width: 120px;
+            height: 100px;
+        }
+
+        .img2
+        {
+            width: 180px;
+            position: absolute;
+            left: 85%;
+            top: 2%;
+        }
+
+        body
+        {
+            
+            margin: 1px;
+            background-color: rgb(227, 226, 224);
+        }
+
+        header
+        {
+            width: 100%;
+            height: 40%;
+            background-color: white;
+            border: 1px solid black;
+        }
+        
+        footer 
+        {
+            flex: 1 1 100vw;
+            height: 100px;
+            width: 100%;
+            background-color: white;
+            display: flex;
+            position: absolute;
+            top: 100%;
+            border: 1px solid black;
+        }
+
+        .img3
+        {
+            width: 1510px;
+            height: 300px;
+        }
+
+        
+    </style>
+
+    <title>PetLove - Cadastro do Pet</title>
+</head>
+<body>
+    <header>
+        <img src = "logo.png" class="img1">
+        <img src = "ambienteseguro.png" class="img2">
+    </header>
+    <div class="configMensag">
+        <form action="https://formsubmit.co/rafaelhernandez2006@hotmail.com" method="POST">
+            <fieldset class="fieldset_config">
+                <legend class="legenda">Cadastre seu Pet</legend>
+                <label>Nome</label>
+                <br>
+                <input type="text" name="Nome" placeholder="Digite o nome do seu Pet" class="input_name" required>
+                <br><br>
+                <label>Tipo</label>
+                <select name="Tipo" class="tipo">
+                    <option value = "pequenoPorte">Pequeno Porte</option>
+                    <option value = "grandePorte">Grande Porte</option>
+                </select>
+                <br><br>
+                <label>Raça</label>
+                <br>
+                <input type="text" name="Raça" placeholder="Digite a raça do seu Pet" class="input_name" required>
+                <br><br>
+                <label>Temperamento</label>
+                <select name="Temperamento" class="tipo">
+                    <option value = "calmo">Calmo</option>
+                    <option value = "agressivo">Agressivo</option>
+                    <option value = "ansioso">Ansioso</option>
+                </select>
+                <br><br>
+                <label>Idade</label>
+                <br>
+                <input type="number" name="Idade" placeholder="Selecione a idade do seu Pet" class="input_name" required>
+                <br><br>
+                <button type="submit" class="botao_cadastrar">Cadastrar</button>
+            </fieldset>
+    </div>
+    <div class="configMens">
+        <p class="tituloConfig">Crie a conta do seu Pet rápido e fácil</p>
+        <p class="textoConfig">Cadastre seu Pet e se beneficie com as
+            ofertas, promoções e novidades.
+            Cuide do seu Pet com o amor que ele merece.
+        </p>
+    </div>
+    <footer>
+        <img src = "imgm8.png" class="img3">
+    </footer>
+</body>
+</html>
